@@ -1,0 +1,274 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://media.giphy.com/media/ZTAojHK9IHsSQ/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 900px;
+}
+
+
+.logo
+{
+cursor: pointer;
+height: 100px;
+width: 100px;
+margin-left: 50px;
+top:0;
+}
+
+.content
+{
+    text-align: center;
+    top:50%;
+    position: absolute;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    color: rgb(227, 243, 225);
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+button{
+    background-color: transparent;
+    border:2px solid rgb(224, 223, 243);
+    color: rgb(155, 248, 163);
+    border-radius:10px;
+    padding: 10px 20px;
+    
+}
+.s1
+{
+    
+    display: flex;
+    
+}
+.navbar h3
+{
+    color: rgb(235, 235, 241);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-right: 500px;
+
+}
+.navbar 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+   
+    
+}
+.sidebar
+{
+    width:100px;
+    height: 100vh;
+    position: absolute;
+    right: 0%;
+    top:0;
+    background-color: white;
+}
+.menu
+{
+    height: 50px;
+    margin: 40px 10px;
+    position: absolute;
+}
+.social-link img,.useful-link img
+{
+height: 40px;
+}
+.social-link
+{
+    position: absolute;
+    top:30%;
+    transform: translateY(-50%,-50%);
+    text-align: center;
+    margin: 10px;
+    justify-content:space-around;
+}
+.useful-link
+{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    justify-content: space-evenly ;
+    margin: 40px;
+}
+
+.bubbles
+{ 
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.bubbles img
+{
+    width:50px;
+    animation: bubble 7s infinite linear;
+}
+@keyframes bubble
+{
+0%
+{
+opacity: 0;
+transform: translateY(0);
+}
+50%
+{
+opacity: 1;
+
+}
+70%
+{
+    opacity: 1;
+}
+100%
+{
+opacity: 0;
+transform: translateY(-90vh);
+}
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 2s;
+    width: 70px;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay: 1s;
+    width: 40px; 
+}
+.bubbles img:nth-child(3)
+{
+    animation-delay: 3s;
+    width: 35px; 
+}
+
+.bubbles img:nth-child(4)
+{
+    animation-delay: 2s;
+    width: 40px;  
+}
+.bubbles img:nth-child(5)
+{
+    animation-delay: 4.5s;
+    width: 25px;
+    height: 70px; 
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 2s;
+    width: 20px; 
+  
+}
+@media screen and (max-width:500px) and (min-width:300px)
+{
+    .head
+    {
+        background-image:  url(https://media.giphy.com/media/ZTAojHK9IHsSQ/giphy.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+    .content 
+    {
+      font-size: 30px;
+    }
+    .logo
+    {
+      cursor:pointer;
+      height: 50px;
+      width: 140px;
+      margin-left: 5px;
+    }
+    .sidebar{
+        width:100%;
+        height: 50px;
+        
+        background: linear-gradient(296deg,blue 0%, black 80%);
+        top:auto;
+        bottom: 0;
+    }   
+    .menu{
+        margin:10px;
+        margin-left: 20px;
+        top:0%;
+    }
+    .social-link
+{
+    position: unset;
+    top:50%;
+    transform: translateY(-50%,-50%);
+    text-align: center;
+    margin: 10px;
+    justify-content:space-around;
+}
+.useful-link
+{
+    position: absolute;
+    right: 0%;
+     width: 100px;
+    justify-content:space-around;
+    
+        bottom: 0;
+    margin: 0;
+    top: 10%;
+}
+} 
+@media screen and (max-width:900px) and (min-width:600px)
+{
+    .content h1
+    {
+     color:rgb(207, 246, 192);
+    }
+   button
+    {
+        background-color: transparent;
+        border:2px solid rgb(224, 223, 243);
+        color: white;
+        border-radius:10px;
+        padding: 10px 60px;
+        
+    }
+    
+   }
+   @media screen and (max-width:1000px) and (min-width:500px)
+   {
+    .content h1
+    {
+     color:rgb(207, 246, 192);
+    }
+   button
+    {
+        background-color: transparent;
+        border:2px solid rgb(224, 223, 243);
+        color: white;
+        border-radius:10px;
+        padding: 10px 60px;
+        
+    }
+    .sidebar
+{
+    width:100px;
+    height: 100vh;
+    position: absolute;
+    right: 0%;
+    top:0;
+    background-color: rgb(249, 240, 240);
+}
+   }
+
+
+
+
